@@ -1,0 +1,983 @@
+---------------------------------------------------------------
+[ 2019-09-03T10:39:56+08:00 ] 127.0.0.1 GET /admin
+[ info ] zpc.test.com/admin [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：1,326.41kb] [文件加载：42]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:39:56+08:00 ] 127.0.0.1 GET /admin/user/login.html
+[ info ] zpc.test.com/admin/user/login.html [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,416.66kb] [文件加载：41]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\User->login[ D:\shanchuang\game\application\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\shanchuang\game\public/../application/admin\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:40:00+08:00 ] 127.0.0.1 POST /index.php/index/ajax/getuserinfo
+[ info ] zpc.test.com/index.php/index/ajax/getuserinfo [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,015.30kb] [文件加载：50]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'getuserinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->getuserinfo[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `tp_user_list`  SET `ip`='127.0.0.1'  WHERE  `id` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:06+08:00 ] 127.0.0.1 POST /index.php/index/ajax/login
+[ info ] zpc.test.com/index.php/index/ajax/login [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：2,003.27kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '32',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+)
+[ info ] [ PARAM ] array (
+  'nickname' => '13213104721',
+  'pass' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Ajax->login[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list_kc` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list_kc` WHERE  `nickname` = '13213104721'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.045003s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:07+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:40:07+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:40:08+08:00 ] 127.0.0.1 POST /index.php/index/ajax/getuserinfo
+[ info ] zpc.test.com/index.php/index/ajax/getuserinfo [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：2,001.63kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'getuserinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->getuserinfo[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list` WHERE  `id` = 6921 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:08+08:00 ] 127.0.0.1 POST /index.php/index/ajax/gonggao
+[ info ] zpc.test.com/index.php/index/ajax/gonggao [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：1,998.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'gonggao',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->gonggao[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:08+08:00 ] 127.0.0.1 POST /index.php/index/Ajax/roompwd
+[ info ] zpc.test.com/index.php/index/Ajax/roompwd [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：1,990.02kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Ajax',
+    2 => 'roompwd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->roompwd[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_roompwd` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_roompwd` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:08+08:00 ] 127.0.0.1 POST /index.php/index/ajax/roomset
+[ info ] zpc.test.com/index.php/index/ajax/roomset [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,995.39kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'roomset',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->roomset[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_fengding_set` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_fengding_set` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:08+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:40:08+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:40:10+08:00 ] 127.0.0.1 POST /index.php/index/ajax/getuserinfo
+[ info ] zpc.test.com/index.php/index/ajax/getuserinfo [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：2,001.63kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'getuserinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->getuserinfo[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list` WHERE  `id` = 6921 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:40:10+08:00 ] 127.0.0.1 POST /index.php/index/ajax/getkcuser
+[ info ] zpc.test.com/index.php/index/ajax/getkcuser [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：2,001.11kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'getkcuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->getkcuser[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list_kc` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list_kc` WHERE  `id` = 6921 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:14+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:41:14+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:41:14+08:00 ] 127.0.0.1 POST /index.php/index/Ajax/roompwd
+[ info ] zpc.test.com/index.php/index/Ajax/roompwd [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：1,990.02kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Ajax',
+    2 => 'roompwd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->roompwd[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_roompwd` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_roompwd` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:14+08:00 ] 127.0.0.1 POST /index.php/index/ajax/roomset
+[ info ] zpc.test.com/index.php/index/ajax/roomset [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,995.39kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'roomset',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->roomset[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_fengding_set` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_fengding_set` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:14+08:00 ] 127.0.0.1 POST /index.php/index/ajax/getuserinfo
+[ info ] zpc.test.com/index.php/index/ajax/getuserinfo [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：2,001.63kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'getuserinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->getuserinfo[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list` WHERE  `id` = 6921 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:15+08:00 ] 127.0.0.1 POST /index.php/index/ajax/fanhuijilu
+[ info ] zpc.test.com/index.php/index/ajax/fanhuijilu [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：1,982.30kb] [文件加载：51]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'fanhuijilu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->fanhuijilu[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_record` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-89' at line 1[D:\shanchuang\game\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:15+08:00 ] 127.0.0.1 POST /index.php/index/ajax/fanrecord
+[ info ] zpc.test.com/index.php/index/ajax/fanrecord [运行时间：0.579033s][吞吐率：1.73req/s] [内存消耗：1,989.85kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'fanrecord',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->fanrecord[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_record` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_record` ORDER BY `kjtime` DESC LIMIT 1 [ RunTime:0.524030s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:15+08:00 ] 127.0.0.1 POST /index.php/index/ajax/weihu
+[ info ] zpc.test.com/index.php/index/ajax/weihu [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,990.97kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'weihu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->weihu[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `chuantong`,`dazhong`,`chuantong1` FROM `tp_config` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:15+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.030001s][吞吐率：33.33req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:41:16+08:00 ] 127.0.0.1 POST /index.php/index/ajax/fanrecord
+[ info ] zpc.test.com/index.php/index/ajax/fanrecord [运行时间：0.514029s][吞吐率：1.95req/s] [内存消耗：1,989.85kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'fanrecord',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->fanrecord[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_record` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_record` ORDER BY `kjtime` DESC LIMIT 1 [ RunTime:0.439025s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:16+08:00 ] 127.0.0.1 GET /web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png
+[ info ] zpc.test.com/web/comp/game/%E5%BC%80%E5%A5%96%E8%83%8C%E6%99%AF.png [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,102.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'comp',
+    2 => 'game',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://zpc.test.com',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-03T10:41:16+08:00 ] 127.0.0.1 POST /index.php/index/ajax/getuserinfo
+[ info ] zpc.test.com/index.php/index/ajax/getuserinfo [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：2,001.63kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'getuserinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->getuserinfo[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user_list` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user_list` WHERE  `id` = 6921 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:17+08:00 ] 127.0.0.1 POST /index.php/index/ajax/fanrecord
+[ info ] zpc.test.com/index.php/index/ajax/fanrecord [运行时间：0.474027s][吞吐率：2.11req/s] [内存消耗：1,989.85kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'fanrecord',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->fanrecord[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_record` ORDER BY `kjtime` DESC LIMIT 1 [ RunTime:0.402023s ]
+---------------------------------------------------------------
+[ 2019-09-03T10:41:18+08:00 ] 127.0.0.1 POST /index.php/index/ajax/fanrecord
+[ info ] zpc.test.com/index.php/index/ajax/fanrecord [运行时间：0.445025s][吞吐率：2.25req/s] [内存消耗：1,989.85kb] [文件加载：47]
+[ info ] [ LANG ] D:\shanchuang\game\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'fanrecord',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ipsgrsjl62atvnots1getlqrh9',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://zpc.test.com/web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://zpc.test.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'zpc.test.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ajax->fanrecord[ D:\shanchuang\game\application\index\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=game;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_record` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_record` ORDER BY `kjtime` DESC LIMIT 1 [ RunTime:0.390022s ]
