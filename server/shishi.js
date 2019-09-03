@@ -9,7 +9,7 @@ var kjnum = '';//==1黑桃 ==4红桃 3.8    ==3梅花 ==2方块 4.0
 var kjArr = [3.8, 4, 4, 3.8, 20];//开奖倍数
 var BetArr = [];
 var UpperLimit = [[], []];
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://39.96.38.193/';
 var RobArr = [0, 0, 0, 0, 0];
 setInterval(function () {
     request.post({ url: GameUrl + 'index.php/index/Ajax/req_api', form: {} }, function (error, body) {
@@ -83,9 +83,9 @@ setInterval(function () {
 //数据库配置
 var options = {
     host: '127.0.0.1',
-    user: 'liulian1995_cn',
-    password: 'A651.131Kac7..d4tb..Z7t',
-    database: 'liulian1995_cn'
+    user: 'root',
+    password: '123456',
+    database: 'game'
 };
 
 server.listen(10008, function () {

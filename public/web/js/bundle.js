@@ -126,7 +126,7 @@ var GameConfig = function () {
 
 exports.default = GameConfig;
 GameConfig.GameUrl = 'http://' + window.location.host + '/';
-GameConfig.GameNodeUrl = 'http://103.74.193.69:10009';
+GameConfig.GameNodeUrl = 'http://' + window.location.host + ':10009';
 // GameConfig.GameNodeUrl = 'http://localhost:10009';
 
 
@@ -184,7 +184,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  */
 // var GameUrl = 'http://sss.9pas9r.cn/'
 // var GameUrl = 'http://ts.pyh5.top/'
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://' + window.location.host + '/';
 
 var BeiJingPage = function (_Laya$Scene) {
     _inherits(BeiJingPage, _Laya$Scene);
@@ -487,7 +487,6 @@ var BeiJingPage = function (_Laya$Scene) {
                 // BeiJingPage.instance.BetArr = data.BetArr;
             });
             this.socket.on('房间信息', function (data) {
-                // console.log('房间信息', data);
                 BeiJingPage.instance.STATE = data.STATE;
                 BeiJingPage.instance.roomArr = data.RoomArr;
                 if (data.STATE != '') BeiJingPage.instance.tishi.visible = false;
@@ -501,6 +500,7 @@ var BeiJingPage = function (_Laya$Scene) {
                 // BeiJingPage.instance.roomName.text = '北京赛车 - ' + data.newQiHao + '期 -三公';
                 // }
 
+                console.log('房间信息', data.STATE);
                 BeiJingPage.instance.getChildByName('开奖时间').text = '距离下局开奖时间还有' + (data.kjtime-3) + '秒';
                 if (data.STATE == '开始下注') {
                     BeiJingPage.instance.getChildByName('开奖时间').text = '下注时间： ' + (data.kjtime-3) + '秒';
@@ -531,7 +531,7 @@ var BeiJingPage = function (_Laya$Scene) {
                 console.log('上轮记录.......', data);
                 // console.log('上轮记录.......', JSON.parse(data.RoomArr));
                 // BeiJingPage.instance.onJieSuan(0);
-                BeiJingPage.instance.NextJieSuan = JSON.parse(data[0].RoomArr);
+                BeiJingPage.instance.NextJieSuan =  JSON.parse(data[0].RoomArr);
                 BeiJingPage.instance.onJieSuan(0);
             });
             this.socket.on('走势图', function (data) {
@@ -1389,7 +1389,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  */
 // var GameUrl = 'http://sss.9pas9r.cn/'
 // var GameUrl = 'http://ts.pyh5.top/'
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://' + window.location.host + '/'
 
 var GameUI = function (_Laya$Scene) {
     _inherits(GameUI, _Laya$Scene);
@@ -1478,7 +1478,7 @@ var GameUI = function (_Laya$Scene) {
             // var GameNodeUrl = 'http://localhost:10008';
             // var GameNodeUrl = 'http://47.105.132.241:10008';
             // var GameNodeUrl = 'http://118.190.157.195:10038';
-            var GameNodeUrl = 'http://118.190.157.195:10008';
+            var GameNodeUrl = 'http://' + window.location.host + ':10008'
 
             this.socket = io.connect(GameNodeUrl);
             this.socket.on('connect', function () {
@@ -2239,7 +2239,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  */
 // var GameUrl = 'http://sss.9pas9r.cn/'
 // var GameUrl = 'http://ts.pyh5.top/'
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://' + window.location.host + '/'
 
 var HomePage = function (_Laya$Scene) {
     _inherits(HomePage, _Laya$Scene);
@@ -2654,7 +2654,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // var GameUrl = 'http://sss.9pas9r.cn/'
 // var GameUrl = 'http://ts.pyh5.top/'
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://' + window.location.host + '/'
 
 var SignIn = function (_Laya$Scene) {
     _inherits(SignIn, _Laya$Scene);
@@ -2865,7 +2865,7 @@ var file = '';
 var fileReader;
 // var GameUrl = 'http://sss.9pas9r.cn/'
 // var GameUrl = 'http://ts.pyh5.cn/'
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://' + window.location.host + '/'
 
 var XiaFen = function (_Laya$Scene) {
     _inherits(XiaFen, _Laya$Scene);

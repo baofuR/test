@@ -13,7 +13,7 @@ var iskaijiang = false;
 var NextRecordArr = [[], [], []];
 var yingZhuoArr = [[], [], []];
 var NextKJArr = [[], [], []];
-var GameUrl = 'http://zpc.test.com/';
+var GameUrl = 'http://39.96.38.193/';
 var timeDJS = 60;  //开奖倒计时
 var isblkj = false;//本轮是否开奖
 // var newQiHao = '';//上期号码 
@@ -81,7 +81,9 @@ setInterval(function () {
             io.sockets.in(i).emit('等待开奖', RoomArr[i]);
         }
     }
+
     for (var i = 0; i < 3; i++) {
+        
         io.sockets.in(i).emit('房间信息', { RoomArr: RoomArr[i], STATE: STATE, kjtime: timeDJS, newQiHao: newQiHao, kjArr: kjArr });
     }
 
@@ -89,9 +91,9 @@ setInterval(function () {
 //数据库配置
 var options = {
     host: '127.0.0.1',
-    user: 'liulian1995_cn',
-    password: 'A651.131Kac7..d4tb..Z7t',
-    database: 'liulian1995_cn'
+    user: 'root',
+    password: '123456',
+    database: 'game'
 };
 /**
  * 50秒发牌 
@@ -373,7 +375,7 @@ app.get('/', function (req, res) {
 });
 var onlineuser = [];
 var socket = io.on('connection', function (socket) {
-    // console.log('链接成功1111');
+    console.log('链接成功1111');
     socket.on('登录', function (data) {
         console.log('denglu', data)
         var ishas = false;
