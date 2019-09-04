@@ -117,10 +117,10 @@ class Ajax extends Controller
     //}
 	public function req_api()
     {
-        $url = "http://api.b1api.com/t?p=json&t=txffc&limit=20&token=4A659FA492B696E6";
+        $url = "http://api.b1api.com/api?p=json&t=txffc&limit=20&token=2CB077CE80C64311";
         //$arr =file_get_contents($url);
         $arr = $this->curl_get($url);
-        dump($arr);
+//        dump($arr);
         $res = json_decode($arr, true);
         $da = $res['data'];
         $code = str_replace(',', '', $da[0]['opencode']);
