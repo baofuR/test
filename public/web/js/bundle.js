@@ -2507,7 +2507,7 @@ var HomePage = function (_Laya$Scene) {
             this.Record.visible = true;
             this.rlist.vScrollBarSkin = '';
             if (index == 0) {
-                this.Record.getChildByName('name').text = '13.8  4.0 充值记录';
+                this.Record.getChildByName('name').text = '3.8  4.0 充值记录';
                 var fun = 'backchongzhi';
             }
             if (index == 1) {
@@ -2515,7 +2515,7 @@ var HomePage = function (_Laya$Scene) {
                 var fun = 'backbjsccz';
             }
             if (index == 2) {
-                this.Record.getChildByName('name').text = '13.8  4.0提现记录';
+                this.Record.getChildByName('name').text = '3.8  4.0提现记录';
                 var fun = 'backtixian';
             }
             if (index == 3) {
