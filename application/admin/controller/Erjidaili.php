@@ -283,7 +283,7 @@ class Erjidaili extends Controller
 		//获取覆盖图图片的宽高
 		list($src_w, $src_h) = getimagesize($src_path);
 		//将覆盖图复制到目标图片上，最后个参数100是设置透明度（100是不透明），这里实现不透明效果
-		imagecopymerge($dst, $src, 412, 300, 0, 0, $src_w, $src_h, 100);
+		imagecopymerge($dst, $src, 140, 590, 0, 0, $src_w, $src_h, 100);
 		header("Content-type: image/png");
 		$a = "./" . "headimg/" . "3235" . date("His", time()) . rand(1111, 9999) . '.png';
 		imagepng($dst,$a);//根据需要生成相应的图片

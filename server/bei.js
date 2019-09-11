@@ -13,7 +13,7 @@ var iskaijiang = false;
 var NextRecordArr = [[], [], []];
 var yingZhuoArr = [[], [], []];
 var NextKJArr = [[], [], []];
-var GameUrl = 'http://39.96.38.193/';
+var GameUrl = 'http://www.star-trip.net.cn/';
 var timeDJS = 60;  //开奖倒计时
 var isblkj = false;//本轮是否开奖
 // var newQiHao = '';//上期号码 
@@ -37,7 +37,7 @@ function onChouShui() {
         // body: requestData
     }, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body);
+//            console.log(body);
             shoushui = body.choushui / 100;
         }
     });
@@ -113,7 +113,7 @@ setInterval(function () {
         // body: requestData
     }, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log('====', body);
+//            console.log('====', body);
         }
     });
 }, 3000);
@@ -556,7 +556,8 @@ function SetMysql(data, type, kjnum) {
                 });
 
                 var requestData = { id: BetArr[i][j].id, jine: BetArr[i][j].fama };
-                // console.log('===yjyjjyjyj==', requestData);
+                 console.log('==111111==',BetArr[i][j].id);
+                 console.log(requestData);
                 request({
                     url: GameUrl + 'index.php/index/Ajax/getxiazhu',
                     method: "POST",
