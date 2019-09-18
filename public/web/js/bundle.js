@@ -2327,7 +2327,7 @@ var HomePage = function (_Laya$Scene) {
             });
             this.isSound = false;
             Laya.timer.loop(30, this, this.onframe);
-            for (var i = 0; i < 4; i++) {
+            for (var i = 0; i < 2; i++) {
                 this.jilubtn.getChildAt(i).on(Laya.Event.CLICK, this, this.onRecord, [i]);
             }
 
@@ -2399,13 +2399,13 @@ var HomePage = function (_Laya$Scene) {
         value: function onEnterClik(i) {
             //点击进入房间
             // console.log(i);
-            if (i == 0) {
-                this.Enter.getChildAt(i).disabled = true;
-                this.loading.visible = true;
-                Laya.Tween.to(this.loadimg, { rotation: 360 }, 4000);
-                var game = new _GameUI2.default();
-                Laya.stage.addChild(game);
-            }
+            // if (i == 0) {
+            //     this.Enter.getChildAt(i).disabled = true;
+            //     this.loading.visible = true;
+            //     Laya.Tween.to(this.loadimg, { rotation: 360 }, 4000);
+            //     var game = new _GameUI2.default();
+            //     Laya.stage.addChild(game);
+            // }
             if (i == 1) {
                 $.ajax({
                     type: "POST",
@@ -2506,19 +2506,19 @@ var HomePage = function (_Laya$Scene) {
         value: function onRecord(index) {
             this.Record.visible = true;
             this.rlist.vScrollBarSkin = '';
+            // if (index == 0) {
+            //     this.Record.getChildByName('name').text = '3.8  4.0 充值记录';
+            //     var fun = 'backchongzhi';
+            // }
             if (index == 0) {
-                this.Record.getChildByName('name').text = '3.8  4.0 充值记录';
-                var fun = 'backchongzhi';
-            }
-            if (index == 1) {
                 this.Record.getChildByName('name').text = '北京赛车充值记录';
                 var fun = 'backbjsccz';
             }
-            if (index == 2) {
-                this.Record.getChildByName('name').text = '3.8  4.0提现记录';
-                var fun = 'backtixian';
-            }
-            if (index == 3) {
+            // if (index == 2) {
+            //     this.Record.getChildByName('name').text = '3.8  4.0提现记录';
+            //     var fun = 'backtixian';
+            // }
+            if (index == 1) {
                 this.Record.getChildByName('name').text = '北京赛车提现记录';
                 var fun = 'backbjsctx';
             }
@@ -2574,7 +2574,7 @@ var HomePage = function (_Laya$Scene) {
                 dataType: 'json',
                 success: function success(data) {
                     console.log(data, '获取信息');
-                    HomePage.instance.geren.getChildByName('3.8').text = Math.floor(data.balance * 100) / 100;
+                    // HomePage.instance.geren.getChildByName('3.8').text = Math.floor(data.balance * 100) / 100;
                     HomePage.instance.geren.getChildByName('id').text = data.id;
                 }
             });
